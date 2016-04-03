@@ -33,14 +33,18 @@ public  class IpLocationService {
 			e.printStackTrace();
 		}
 		
+		
 		try {
 			ipLocationResult= new Gson().fromJson(httpResponse, IpLocationResult.class);
 			return ipLocationResult;
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.err.println("解析json字符串时发生错误");
+			System.err.println("解析json字符串时发生错误，请不要使用例如127.0.0.1的访问使用了本接口的网站");
 			e.printStackTrace();
-			return null;
+			ipLocationResult = new IpLocationResult();
+			ipLocationResult.setCity("本地");
+			ipLocationResult.setCountry("本地");
+			return ipLocationResult;
 		}
 	}
 }
