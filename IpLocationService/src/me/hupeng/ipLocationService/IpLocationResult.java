@@ -7,10 +7,22 @@ public class IpLocationResult {
 	private Integer ret;
 	private Integer start;
 	private Integer end;
+	/**
+	 * 国家
+	 * */
 	private String country;
+	/**
+	 * 省份
+	 * */
 	private String province;
+	/**
+	 * 城市
+	 * */
 	private String city;
 	private String district;
+	/**
+	 * 网络提供商
+	 * */
 	private String isp;
 	private String type;
 	private String desc;
