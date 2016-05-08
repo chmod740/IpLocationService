@@ -39,8 +39,8 @@ public  class IpLocationService {
 			return ipLocationResult;
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.err.println("解析json字符串时发生错误，请不要使用例如127.0.0.1的访问使用了本接口的网站");
-			e.printStackTrace();
+			//System.err.println("解析json字符串时发生错误，请不要使用例如127.0.0.1的访问使用了本接口的网站");
+			//e.printStackTrace();
 			ipLocationResult = new IpLocationResult();
 //			ipLocationResult.setCity("本地");
 //			ipLocationResult.setCountry("本地");
