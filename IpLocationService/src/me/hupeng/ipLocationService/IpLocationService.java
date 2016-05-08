@@ -42,8 +42,11 @@ public  class IpLocationService {
 			System.err.println("解析json字符串时发生错误，请不要使用例如127.0.0.1的访问使用了本接口的网站");
 			e.printStackTrace();
 			ipLocationResult = new IpLocationResult();
-			ipLocationResult.setCity("本地");
+//			ipLocationResult.setCity("本地");
+//			ipLocationResult.setCountry("本地");
 			ipLocationResult.setCountry("本地");
+			ipLocationResult.setProvince("");
+			ipLocationResult.setCity("");;
 			return ipLocationResult;
 		}
 	}
