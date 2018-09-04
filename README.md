@@ -15,3 +15,6 @@
 <del>[下载地址](https://github.com/imu-hupeng/IpLocationService/releases)</del>
 
 新浪IP地址服务已经停用，此项目已经停止维护，望周知
+
+新版本的库基于淘宝IP库，请移步
+[TaobaoIP](https://github.com/imu-hupeng/TaobaoIP)
